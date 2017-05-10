@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="400dp"
+    android:padding="5dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/btn_come">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:text="免责申明"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/mianze"/>
+        <TextView
+            android:id="@+id/tv_dialog_warn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/indianred"
+            android:textSize="20sp"
+            android:text="请不要利用本软件传播低俗、不良信息"/>
+
+        <CheckBox
+            android:id="@+id/cb_agree"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意使用"/>
+
+    </LinearLayout>
+</ScrollView>
+    <Button
+        android:id="@+id/btn_come"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入软件"
+        android:textColor="@color/colorblue"
+        android:textSize="20sp"
+        android:background="@color/aliceblue"/>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="lq.xxp.se.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="50dp">
+
+            <Button
+                android:layout_centerVertical="true"
+                android:id="@+id/btn_open_menu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/open_menu"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/btn_open_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="主页"
+                android:textColor="@color/white"
+                android:layout_marginLeft="16dp" />
+        </RelativeLayout>
+
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

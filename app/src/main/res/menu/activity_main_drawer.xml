@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="主页" />
+        <item
+            android:id="@+id/nav_collect"
+            android:icon="@drawable/collect"
+            android:title="收藏" />
+        <item
+            android:id="@+id/nav_hold"
+            android:icon="@drawable/hold"
+            android:title="最热" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/video"
+            android:title="视频" />
+        <item
+            android:id="@+id/nav_image"
+            android:icon="@drawable/actor"
+            android:title="女优" />
+        <item
+            android:id="@+id/nav_player"
+            android:icon="@drawable/onlien_player"
+            android:title="暂不可用" />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/info"
+                android:title="软件注意" />
+            <item
+                android:id="@+id/nav_clear"
+                android:icon="@drawable/clear"
+                android:title="检查更新" />
+            <!--<item-->
+                <!--android:id="@+id/nav_register"-->
+                <!--android:icon="@drawable/register"-->
+                <!--android:title="支持作者" />-->
+
+        </menu>
+    </item>
+
+</menu>

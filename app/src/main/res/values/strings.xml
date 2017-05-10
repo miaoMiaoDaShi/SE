@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">喵喵撸</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="mianze">软件仅供技术交流，请勿用于商业及非法用途，
+        如产生法律纠纷与本人无关,使用本软件产品风险由用户自行承担，在适用法律允许的最大范围内，
+        对因使用或不能使用本软件所产生的损害及风险,包
+        括但不限于直接或间接的个人损害、商业赢利的丧失、贸易中断、
+        商业信息的丢失或任何其它经济损失，作者不承担任何责任。</string>
+</resources>

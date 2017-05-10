@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_height="30.0dip"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/actorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="女优"
+            android:textColor="@color/colorblue"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/videoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector"
+            android:gravity="center"
+            android:text="视频"
+            android:textColor="@color/colorblue"
+            android:textSize="20dip" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/linearLayout"
+        android:scaleType="matrix"
+        android:src="@drawable/scrollbar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollbar"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>

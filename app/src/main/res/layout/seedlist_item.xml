@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_seedinfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="070116-197"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/movieinfo_text"/>
+    <TextView
+        android:id="@+id/tv_seedinfo_otherinfo"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="大小: 1.6 GB      文件数: 9      创建日期: 23 天前      热度: 0"
+        android:textColor="@color/gray"
+        android:textSize="17sp"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_home" type="drawable">@drawable/home</item>
+    <item name="ic_menu_collect" type="drawable">@drawable/collect</item>
+    <item name="ic_menu_hold" type="drawable">@drawable/hold</item>
+    <item name="ic_menu_video" type="drawable">@drawable/video</item>
+    <item name="ic_menu_actor" type="drawable">@drawable/actor</item>
+    <item name="ic_menu_txt" type="drawable">@drawable/onlien_player</item>
+    <item name="ic_menu_clean" type="drawable">@drawable/clear</item>
+    <item name="ic_menu_register" type="drawable">@drawable/register</item>
+    <item name="ic_menu_info" type="drawable">@drawable/info</item>
+</resources>

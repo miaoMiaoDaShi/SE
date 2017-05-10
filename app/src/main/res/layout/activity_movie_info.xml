@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lq.xxp.se.activity.MovieInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxLines="1"
+            android:overScrollMode="never"
+            android:text="主页"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_mi_collect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/like"
+            android:backgroundTint="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/top"
+        android:layout_above="@+id/btn_gett"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/seed_list_wait"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/tv_seed_list_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="玩命加载中....."/>
+        </LinearLayout>
+        <!--<ListView-->
+            <!--android:id="@+id/lv_seed"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="invisible">-->
+
+        <!--</ListView>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_movieinfo"
+        android:layout_above="@+id/btn_gett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/top"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <ProgressBar
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="玩命加载中....."/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_movieinfo_img"
+            android:layout_width="match_parent"
+            android:layout_height="210dp" />
+
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_movieinfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="片名: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_movieinfo_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="识别码: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_movieinfo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="发行时间: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_movieinfo_len"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="长度: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_movieinfo_make"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="制作商: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_movieinfo_series"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="系列: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_movieinfo_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:overScrollMode="never"
+                android:text="种类: 获取中...."
+                android:textColor="@color/black"
+                android:textSize="@dimen/movieinfo_text" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_gett"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorblue"
+        android:text="搜索种子"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+</RelativeLayout>

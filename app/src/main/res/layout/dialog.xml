@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="210dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:id="@+id/ll_1"
+       android:layout_margin="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="horizontal">
+
+       <ImageView
+           android:id="@+id/iv_icon"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@mipmap/icon"/>
+       <TextView
+           android:id="@+id/tv_title"
+           android:layout_marginLeft="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/app_name"
+           android:textColor="@color/white"
+           android:textSize="25sp"/>
+
+   </LinearLayout>
+   <View
+       android:layout_below="@id/ll_1"
+       android:id="@+id/v"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/colorAccent"/>
+
+    <ScrollView
+        android:layout_below="@id/v"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/ll_2">
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_negative"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/crimson"/>
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/colorblue"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
